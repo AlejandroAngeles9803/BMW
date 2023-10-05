@@ -452,7 +452,7 @@ header .menu.active{
 
     .nav.active{
         right: 0;
-        top: 0;
+        top: 2;
         width: 100vw;
         height: 100vh;
         display: flex;
