@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+
+    <header>
+        <span class="year">2009</span>
+        <a href="" class="logo"><img src="" alt=""></a>
+        <a href="#" class="menu" onclick="toggleMenu();"></a>
+    </header>
+
+    <div class="banner">
+        <ul class="nav ">
+            <li><a href="./auto-1.html">BMW 760L</a></li>
+            <li><a href="./auto-2.html">BMW I8</a></li>
+            <li><a href="./auto-3.html">BMW M4</a></li>
+            <li><a href="./auto-4.html">BMW Z4</a></li>
+            <li><a href="./auto-5.html">BMW M8 </a></li>
+            <li><a href="./auto-6.html">BMW X6</a></li>
+            <li><a href="./auto-7.html">BMW M5</a></li>
+            <li><a href="./auto-8.html">BMW X7</a></li>
+            <li><a href="./auto-9.html">Vision M </a></li>
+            <li><a href="./auto-10.html">Historia</a></li>
+        </ul>
+        
+        <div class="bg-video-list">
+            <video class="bg-video BMW-760L active" autoplay loop muted src="./assets/videos/BMW-760L.mp4">
+            </video>
+            <video class="bg-video BMW-M4 " autoplay loop muted src="./assets/videos/BMW-M4.mp4">
+            </video>
+            <video class="bg-video BMW-760Li-2 " autoplay loop muted src="./assets/videos/BMW-760Li-2 .mp4">
+            </video>
+            <video class="bg-video BMW-Z4 " autoplay loop muted src="./assets/videos/BMW-Z4.mp4">
+            </video>
+            <video class="bg-video BMW-Vision " autoplay loop muted src="./assets/videos/BMW-Vision.mp4">
+            </video>
+            <video class="bg-video BMW-M8 " autoplay loop muted src="./assets/videos/BMW-M8.mp4">
+            </video>
+            <video class="bg-video BMW-M5 " autoplay loop muted src="./assets/videos/BMW-M5.mp4">
+            </video>
+            <video class="bg-video trailer-1 " autoplay loop muted src="./assets/videos/trailer-1..mp4">
+            </video>
+            <video class="bg-video trailer-12" autoplay loop muted src="./assets/videos/trailer-12.mp4">
+            </video>
+            <video class="bg-video trailer-3" autoplay loop muted src="./assets/videos/trailer-3.mp4">
+            </video>
+        </div>
+        <div class="content">
+            <h1>BMW</h1>
+            <h3 class="model BMW-760L active">BMW-Vision</h3>
+            <h3 class="model BMW-M4 ">BMW-M4</h3>
+            <h3 class="model BMW-760Li-2 ">BMW-760Li-2</h3>
+            <h3 class="model BMW-Z4 ">BMW-Z4 </h3>
+            <h3 class="model BMW-Vision ">BMW I8 </h3>
+            <h3 class="model BMW-M5 ">BMW-M5 </h3>
+            <h3 class="model trailer-3">BMW X6 </h3>
+            <h3 class="model trailer-1 ">BMW X7 </h3>
+            <h3 class="model BMW ">BMW Z4 </h3>
+            <h3 class="model BMW-M8 ">BMW-M8 </h3>
+            <p> Cilindros: Motor: 6 cilindros BMW TwinPower Turbo (un turbo) / 2,998 cm / 340 hp (5,500 – 6,500 rpm) /
+                450 Nm (1,500 – 5,200 rpm)  <br>• Aceleración: 0-100 km/h: 5.5 segundos. <br>Transmisión: Automática deportiva de
+                8 velocidades con función Launch Control <br> <br>
+                Precio: $538,000,OOO MXN</p>
+            <a href="./auto-10.html">Enquire</a>
+        </div>
+        <a href="" class="pause active" onclick="pauseVideo()">
+            <img src="./assets/svg/pause.svg" alt="">
+        </a>
+        <a href="" class="play">
+            <img src="./assets/svg/play.svg" alt="">
+        </a>
+        <div class="screen">
+            <div class="shadow"></div>
+            <div>
+                <span style="--i: 0">
+                    <video class="trailer BMW-760L screen-video active" src="./assets/videos//BMW-760L.mp4""
+                    autoplay
+                    loop 
+                    muted
+                    ></video>
+                    <video class=" trailer BMW-760Li-2 screen-video " src=" ./assets/videos/BMW-760Li-2 .mp4" autoplay
+                        loop muted></video>
+                </span>
+                <span style="--i: 1">
+                    <video class="trailer BMW-M4 screen-video active" src="./assets/videos/BMW-M4.mp4" autoplay loop
+                        muted></video>
+                </span>
+                <span style="--i: 2">
+                    <video class="trailer trailer-12 screen-video active" src="./assets/videos/trailer-12.mp4" autoplay
+                        loop muted></video>
+                </span>
+                <span style="--i: 3">
+                    <video class="trailer BMW-Visio screen-video active" src="./assets/videos/BMW-Vision.mp4" autoplay
+                        loop muted></video>
+                </span>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="carousel">
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMW Visión M Next.jpg" onclick="changeVideo('trailer-12')" alt="">
+                    <h4>Vision M Next</h4>
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMWi8-1.jpg" onclick="changeVideo('BMW-Vision')" alt="">
+                    <h4>BMW I8</h4>
+
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMW M4.jpg" onclick="changeVideo('BMW-M4')" alt="">
+                    <h4>BMW M4</h4>
+
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMW M5.jpg" onclick="changeVideo('BMW-M5')" alt="">
+                    <h4>BMW M5</h4>
+
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMW M8.jpg" onclick="changeVideo('BMW-M8')" alt="">
+                    <h4>BMW M8</h4>
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMW Z4.jpg" onclick="changeVideo('BMW-Z4')" alt="">
+                    <h4>BMW Z4</h4>
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMW 760Li v12.jpg" onclick="changeVideo('BMW-760Li-2')" alt="">
+                    <h4>BMW 760Li</h4>
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMW X6.jpg" onclick="changeVideo('trailer-3')" alt="">
+                    <h4>BMW X6</h4>
+                </a>
+                <a class="carousel-item" href="#">
+                    <img src="./assets/images/BMW X7.jpg" onclick="changeVideo('trailer-1')" alt="">
+                    <h4>BMW X7</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+</body>
+
+</html>
