@@ -443,6 +443,7 @@ header .menu.active{
 
     .logo{
         margin-top: 10px;
+        display: none;
     }
 
     .nav{
@@ -459,6 +460,10 @@ header .menu.active{
         flex-direction: column;
         margin-top: 15px;
     }
+    .nav li{
+        margin-top: 5px;
+    }
+    
 
     .banner{
         padding: 120px 30px 100px;
